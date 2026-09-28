@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Lavanya ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    background:
+        radial-gradient(circle at 15% 20%, rgba(190,130,255,.14), transparent 30%),
+        radial-gradient(circle at 85% 75%, rgba(255,150,200,.12), transparent 30%),
+        #0b0910;
+
+    color:white;
+    font-family:"DM Sans",sans-serif;
+    overflow-x:hidden;
+}
+
+/* ================= PAGE ================= */
+
+.page{
+    min-height:100vh;
+    width:100%;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:50px 20px;
+
+    animation:pageShow .7s ease;
+}
+
+.page.active{
+    display:flex;
+}
+
+.container{
+    width:100%;
+    max-width:850px;
+    text-align:center;
+}
+
+@keyframes pageShow{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= MUSIC ================= */
+
+.music-btn{
+    position:fixed;
+    top:18px;
+    right:18px;
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.15);
+
+    background:rgba(20,15,25,.8);
+    color:white;
+
+    backdrop-filter:blur(12px);
+
+    cursor:pointer;
+    z-index:9999;
+
+    font-size:18px;
+}
+
+/* ================= TEXT ================= */
+
+.small-title{
+    font-size:13px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+
+    color:#cdb8dc;
+
+    margin-bottom:18px;
+}
+
+h1{
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(55px,11vw,105px);
+
+    line-height:.85;
+
+    font-weight:600;
+}
+
+h1 span{
+    display:block;
+    color:#e8b8d8;
+}
+
+.intro-text{
+    max-width:500px;
+
+    margin:30px auto;
+
+    color:#bcb4c2;
+
+    line-height:1.8;
+    font-size:15px;
+}
+
+/* ================= BUTTON ================= */
+
+.button{
+    border:0;
+
+    padding:14px 26px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d7a9d3,
+            #b996d8
+        );
+
+    color:#17101b;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 30px rgba(190,140,210,.2);
+
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+}
+
+/* ================= ENVELOPE ================= */
+
+.envelope-wrap{
+    width:280px;
+    height:180px;
+
+    margin:35px auto;
+
+    position:relative;
+
+    cursor:pointer;
+
+    perspective:800px;
+}
+
+.envelope{
+    position:absolute;
+    inset:0;
+
+    background:#d9b9d3;
+
+    border-radius:8px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.45);
+}
+
+.envelope:before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    border-left:140px solid transparent;
+    border-right:140px solid transparent;
+    border-top:100px solid #c99fc5;
+
+    transform-origin:top;
+
+    transition:.8s;
+
+    z-index:3;
+}
+
+.envelope.open:before{
+    transform:rotateX(180deg);
+}
+
+.seal{
+    position:absolute;
+
+    width:45px;
+    height:45px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#9c6f9e;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:5;
+
+    font-size:20px;
+}
+
+.tap-text{
+    color:#aaa0ad;
+    font-size:13px;
+}
+
+/* ================= MESSAGE ================= */
+
+.message-card{
+    max-width:650px;
+
+    margin:auto;
+
+    padding:45px 35px;
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+    background:
+        rgba(255,255,255,.035);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.3);
+}
+
+.script{
+    font-family:"Caveat",cursive;
+
+    font-size:27px;
+
+    color:#e6bddb;
+
+    margin-bottom:15px;
+}
+
+.message-card h2{
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:43px;
+
+    margin-bottom:25px;
+}
+
+.message-card p{
+    color:#c2bac6;
+
+    line-height:1.9;
+
+    font-size:15px;
+}
+
+.signature{
+    margin-top:25px;
+
+    font-family:"Caveat",cursive;
+
+    font-size:26px;
+
+    color:#e3b5d6;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-title{
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:55px;
+}
+
+.gallery-sub{
+    color:#aaa2ae;
+
+    margin:8px 0 30px;
+}
+
+/*
+    PHOTO CONTAINER
+    One photo at a time
+*/
+
+.photo-area{
+    width:min(92vw,520px);
+
+    margin:0 auto 20px;
+
+    position:relative;
+}
+
+/*
+    IMPORTANT:
+    No fixed image height.
+    This prevents cropping.
+*/
+
+.photo-card{
+    width:100%;
+
+    padding:12px 12px 18px;
+
+    background:#f3eaee;
+
+    border-radius:5px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.55);
+
+    opacity:1;
+
+    transform:
+        translateX(0)
+        scale(1);
+
+    transition:
+        opacity .4s ease,
+        transform .4s ease;
+}
+
+.photo-card.hide{
+    opacity:0;
+
+    transform:
+        translateX(-45px)
+        scale(.96);
+}
+
+/*
+    FULL IMAGE VISIBLE
+*/
+
+.photo-card img{
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    max-height:70vh;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    border-radius:3px;
+}
+
+.photo-caption{
+    color:#282027;
+
+    font-family:"Caveat",cursive;
+
+    font-size:24px;
+
+    margin-top:10px;
+}
+
+.photo-number{
+    color:#aaa0ad;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+}
+
+/* ================= FINAL ================= */
+
+.final-screen{
+    position:relative;
+}
+
+.final-heart{
+    font-size:55px;
+
+    margin-bottom:15px;
+
+    animation:heartbeat 1.6s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.12);
+    }
+}
+
+.final-small{
+    font-size:13px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#cdb8dc;
+
+    margin-bottom:20px;
+}
+
+.final-title{
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:
+        clamp(50px,10vw,90px);
+
+    line-height:.9;
+}
+
+.final-title span{
+    display:block;
+
+    color:#e8b8d8;
+}
+
+.final-text{
+    max-width:550px;
+
+    margin:30px auto;
+
+    color:#bdb5c1;
+
+    line-height:1.9;
+}
+
+.once-again{
+    margin-top:55px;
+
+    padding-top:30px;
+
+    border-top:
+        1px solid rgba(255,255,255,.1);
+
+    animation:
+        finalMessage 1.5s ease;
+}
+
+.once-again .line1{
+    font-family:"Caveat",cursive;
+
+    font-size:28px;
+
+    color:#d9b2d2;
+}
+
+.once-again .line2{
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:
+        clamp(38px,8vw,65px);
+
+    color:#fff;
+
+    margin-top:5px;
+}
+
+.once-again .line2 span{
+    color:#e8b8d8;
+}
+
+@keyframes finalMessage{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= PARTICLES ================= */
+
+.particle{
+    position:fixed;
+
+    pointer-events:none;
+
+    color:rgba(235,190,225,.6);
+
+    z-index:5;
+
+    animation:
+        floatUp linear forwards;
+}
+
+@keyframes floatUp{
+
+    from{
+        transform:
+            translateY(30px)
+            rotate(0deg);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    to{
+        transform:
+            translateY(-110vh)
+            rotate(180deg);
+
+        opacity:0;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+    .page{
+        padding:35px 17px;
+    }
+
+    .message-card{
+        padding:35px 23px;
+    }
+
+    .message-card h2{
+        font-size:36px;
+    }
+
+    .gallery-title{
+        font-size:46px;
+    }
+
+    /*
+        MOBILE:
+        Full photo visible,
+        no cropping.
+    */
+
+    .photo-card img{
+        width:100%;
+
+        height:auto;
+
+        max-height:65vh;
+
+        object-fit:contain;
+    }
+
+    .envelope-wrap{
+        transform:scale(.9);
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= MUSIC ================= -->
+
+<button
+    class="music-btn"
+    id="musicButton"
+    onclick="toggleMusic()"
+>
+♫
+</button>
+
+<audio
+    id="music"
+    loop
+    preload="auto"
+>
+    <source
+        src="song.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+
+
+<!-- ================= INTRO ================= -->
+
+<section
+    class="page active"
+    id="intro"
+>
+
+    <div class="container">
+
+        <div class="small-title">
+            A little something for
+        </div>
+
+        <h1>
+            Happy Birthday
+            <span>Lavanya ♡</span>
+        </h1>
+
+        <p class="intro-text">
+            A tiny birthday surprise made especially
+            for you. Take a little moment and enjoy it. ✨
+        </p>
+
+        <button
+            class="button"
+            onclick="startSurprise()"
+        >
+            Let's Begin ♡
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ENVELOPE ================= -->
+
+<section
+    class="page"
+    id="envelopePage"
+>
+
+    <div class="container">
+
+        <div class="small-title">
+            Something is waiting...
+        </div>
+
+        <div
+            class="envelope-wrap"
+            onclick="openEnvelope()"
+        >
+
+            <div
+                class="envelope"
+                id="envelope"
+            >
+
+                <div class="seal">
+                    ♡
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tap-text">
+            Tap the envelope
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MESSAGE ================= -->
+
+<section
+    class="page"
+    id="message"
+>
+
+    <div class="container">
+
+        <div class="message-card">
+
+            <div class="script">
+                Happy Birthday, Lavanya ♡
+            </div>
+
+            <h2>
+                Another year,<br>
+                another collection of memories.
+            </h2>
+
+            <p>
+
+                I hope this year brings you lots of happiness,
+                laughter, amazing moments and plenty of reasons
+                to smile.
+
+                <br><br>
+
+                Keep being your fun, crazy and wonderful self.
+                And yes... sometimes you're annoying too. 😂
+
+                <br><br>
+
+                But today, no complaints.
+                It's your special day. 🎂
+
+            </p>
+
+            <div class="signature">
+                Have the best day ever ✨
+            </div>
+
+            <br>
+
+            <button
+                class="button"
+                onclick="openGallery()"
+            >
+                Some Memories →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section
+    class="page"
+    id="gallery"
+>
+
+    <div class="container">
+
+        <div class="small-title">
+            A few little moments
+        </div>
+
+        <div class="gallery-title">
+            Little Memories
+        </div>
+
+        <p class="gallery-sub">
+            One photo at a time ♡
+        </p>
+
+
+        <div class="photo-area">
+
+            <div
+                class="photo-card"
+                id="photoCard"
+            >
+
+                <!-- PHOTO 1 FIRST -->
+
+                <img
+                    id="currentPhoto"
+                    src="photo1.jpg"
+                    alt="Lavanya memory 1"
+                >
+
+                <div
+                    class="photo-caption"
+                    id="photoCaption"
+                >
+                    One little memory ♡
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="photo-number"
+            id="photoNumber"
+        >
+            Photo 1 of 3
+        </div>
+
+
+        <button
+            class="button"
+            id="nextButton"
+            onclick="nextPhoto()"
+        >
+            Next Photo →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FINAL ================= -->
+
+<section
+    class="page final-screen"
+    id="final"
+>
+
+    <div class="container">
+
+        <div class="final-heart">
+            🎂
+        </div>
+
+        <div class="final-small">
+            One last thing...
+        </div>
+
+        <div class="final-title">
+
+            Happy Birthday
+
+            <span>
+                Lavanya ♡
+            </span>
+
+        </div>
+
+        <p class="final-text">
+
+            May this year bring you countless happy moments,
+            beautiful memories and lots of reasons to smile.
+
+            <br><br>
+
+            Have an amazing birthday and enjoy your day! ✨
+
+        </p>
+
+
+        <!-- FINAL LAST MESSAGE -->
+
+        <div class="once-again">
+
+            <div class="line1">
+                Once Again,
+            </div>
+
+            <div class="line2">
+                Happy Birthday
+                <span>Lavanya! 🎂♡</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* =====================================================
+   MUSIC
+===================================================== */
+
+const music =
+    document.getElementById("music");
+
+const musicButton =
+    document.getElementById("musicButton");
+
+
+function startMusic(){
+
+    music.play().catch(function(){});
+
+}
+
+
+function toggleMusic(){
+
+    if(music.paused){
+
+        music.play().catch(function(){});
+
+        musicButton.textContent = "♫";
+
+    }
+
+    else{
+
+        music.pause();
+
+        musicButton.textContent = "×";
+
+    }
+
+}
+
+
+/* =====================================================
+   PAGE SYSTEM
+===================================================== */
+
+function showPage(id){
+
+    document
+        .querySelectorAll(".page")
+        .forEach(function(page){
+
+            page.classList.remove("active");
+
+        });
+
+
+    document
+        .getElementById(id)
+        .classList.add("active");
+
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+/* =====================================================
+   START WEBSITE
+===================================================== */
+
+function startSurprise(){
+
+    startMusic();
+
+    showPage("envelopePage");
+
+    createParticles(18);
+
+}
+
+
+/* =====================================================
+   ENVELOPE
+===================================================== */
+
+function openEnvelope(){
+
+    const envelope =
+        document.getElementById("envelope");
+
+
+    envelope.classList.add("open");
+
+
+    setTimeout(function(){
+
+        showPage("message");
+
+        createParticles(20);
+
+    },800);
+
+}
+
+
+/* =====================================================
+   PHOTO DATA
+===================================================== */
+
+const photos = [
+
+    {
+        image:"photo1.jpg",
+        caption:"One little memory ♡"
+    },
+
+    {
+        image:"photo2.jpg",
+        caption:"A beautiful moment ✨"
+    },
+
+    {
+        image:"photo3.jpg",
+        caption:"Keep smiling ♡"
+    }
+
+];
+
+
+let photoIndex = 0;
+
+let changing = false;
+
+
+/* =====================================================
+   OPEN GALLERY
+===================================================== */
+
+function openGallery(){
+
+    photoIndex = 0;
+
+    changing = false;
+
+
+    const photo =
+        document.getElementById("currentPhoto");
+
+
+    const caption =
+        document.getElementById("photoCaption");
+
+
+    const number =
+        document.getElementById("photoNumber");
+
+
+    const button =
+        document.getElementById("nextButton");
+
+
+    photo.src =
+        photos[0].image;
+
+
+    caption.textContent =
+        photos[0].caption;
+
+
+    number.textContent =
+        "Photo 1 of 3";
+
+
+    button.textContent =
+        "Next Photo →";
+
+
+    button.onclick =
+        nextPhoto;
+
+
+    showPage("gallery");
+
+    createParticles(12);
+
+}
+
+
+/* =====================================================
+   NEXT PHOTO
+===================================================== */
+
+function nextPhoto(){
+
+    if(changing){
+        return;
+    }
+
+
+    /*
+        PHOTO 1 → PHOTO 2
+        PHOTO 2 → PHOTO 3
+        PHOTO 3 → FINAL
+    */
+
+
+    if(photoIndex === 2){
+
+        showPage("final");
+
+        createParticles(35);
+
+        return;
+
+    }
+
+
+    changing = true;
+
+
+    const card =
+        document.getElementById("photoCard");
+
+
+    /*
+        FADE / SLIDE OUT
+    */
+
+    card.classList.add("hide");
+
+
+    setTimeout(function(){
+
+        photoIndex++;
+
+
+        const next =
+            photos[photoIndex];
+
+
+        /*
+            CHANGE IMAGE
+        */
+
+        document
+            .getElementById("currentPhoto")
+            .src =
+            next.image;
+
+
+        /*
+            CHANGE CAPTION
+        */
+
+        document
+            .getElementById("photoCaption")
+            .textContent =
+            next.caption;
+
+
+        /*
+            CHANGE NUMBER
+        */
+
+        document
+            .getElementById("photoNumber")
+            .textContent =
+            "Photo " +
+            (photoIndex + 1) +
+            " of 3";
+
+
+        /*
+            SHOW NEW PHOTO
+        */
+
+        card.classList.remove("hide");
+
+
+        const button =
+            document.getElementById(
+                "nextButton"
+            );
+
+
+        /*
+            AFTER PHOTO 3
+            BUTTON BECOMES CONTINUE
+        */
+
+        if(photoIndex === 2){
+
+            button.textContent =
+                "Continue ✨";
+
+        }
+
+        else{
+
+            button.textContent =
+                "Next Photo →";
+
+        }
+
+
+        changing = false;
+
+
+    },400);
+
+}
+
+
+/* =====================================================
+   PARTICLES
+===================================================== */
+
+function createParticles(amount){
+
+    const symbols = [
+        "♡",
+        "✦",
+        "✧",
+        "✨",
+        "♥"
+    ];
+
+
+    for(
+        let i=0;
+        i<amount;
+        i++
+    ){
+
+        const particle =
+            document.createElement("div");
+
+
+        particle.className =
+            "particle";
+
+
+        particle.textContent =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
+
+
+        particle.style.left =
+            Math.random() * 100 +
+            "vw";
+
+
+        particle.style.top =
+            (70 + Math.random()*30) +
+            "vh";
+
+
+        particle.style.fontSize =
+            (10 + Math.random()*14) +
+            "px";
+
+
+        particle.style.animationDuration =
+            (5 + Math.random()*6) +
+            "s";
+
+
+        document.body.appendChild(
+            particle
+        );
+
+
+        setTimeout(function(){
+
+            particle.remove();
+
+        },12000);
+
+    }
+
+}
+
+
+/* =====================================================
+   BACKGROUND PARTICLES
+===================================================== */
+
+setInterval(function(){
+
+    if(
+        document.querySelector(
+            ".page.active"
+        )
+    ){
+
+        createParticles(1);
+
+    }
+
+},2000);
+
+</script>
+
+</body>
+</html>
